@@ -92,7 +92,7 @@ const Select: React.FC<SelectProps> = (props) => {
       error={props.error}
     >
       {props.label && <div className="AltairSelect-label">{props.label}</div>}
-      <motion.div whileTap={{ scale: 0.98 }} className="AltairSelect-selected" onClick={onClickSelect} tabIndex={props.disabled ? undefined : 0} onKeyDown={onKeyDownSelect}>
+      <motion.div whileTap={{ scale: 0.99 }} className="AltairSelect-selected" onClick={onClickSelect} tabIndex={props.disabled ? undefined : 0} onKeyDown={onKeyDownSelect}>
         <div className="AltairSelect-selected-label">
           {hasValue ? props.customSelected!(options.find((val) => val.value === selected)!!) : <p className="AltairSelect-placeholder">{props.placeholder}</p>}
         </div>
@@ -115,7 +115,7 @@ const Select: React.FC<SelectProps> = (props) => {
               <AnimatePresence>
                 {filterOptions.map((option) => (
                   <Option
-                    whileTap={{ scale: 0.98 }}
+                    whileTap={{ scale: 0.99 }}
                     variants={optionVariants}
                     initial="hidden"
                     animate="visible"
