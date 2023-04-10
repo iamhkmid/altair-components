@@ -5,6 +5,14 @@
 
 Component collection based on altair design system.
 
+## Demo
+
+Use the package manager npm to install.
+
+```bash
+https://altair-components.vercel.app/
+```
+
 ## Installation
 
 Use the package manager npm to install.
