@@ -1,0 +1,28 @@
+{
+  "projectName": "altair-components",
+  "projectOwner": "Muhammad Luqmanul Hakim",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "contributors": [
+    {
+      "login": "iamhkmid",
+      "name": "Muhammad Luqmanul Hakim",
+      "avatar_url": "https://github.com/iamhkmid.png",
+      "profile": "https://github.com/iamhkmid",
+      "contributions": [
+        "design",
+        "doc",
+        "maintenance",
+        "bug",
+        "code"
+      ]
+    }
+  ],
+  "repoType": "github",
+  "contributorsPerLine": 7,
+  "repoHost": "https://github.com",
+  "commitConvention": "angular",
+  "skipCi": true
+}
