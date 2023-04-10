@@ -1,7 +1,7 @@
 import React from "react"
 import { SelectProps, TOption } from "./Select.types"
 import { SelectStyled, Option } from "./Select.styled"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence, Variants } from "framer-motion"
 
 const Select: React.FC<SelectProps> = (props) => {
   const ref = React.useRef<null | HTMLDivElement>(null)
@@ -72,12 +72,12 @@ const Select: React.FC<SelectProps> = (props) => {
 
   const hasValue = !!options.find((val) => val.value === selected)
 
-  const optionsVariants = {
+  const optionsVariants: Variants = {
     hidden: { y: -20, opacity: 0 },
     visible: { y: 0, opacity: 1 }
   }
 
-  const optionVariants = {
+  const optionVariants: Variants = {
     hidden: { maxHeight: 0, opacity: 0, padding: "0 15px", marginBottom: "0" },
     visible: { maxHeight: 300, opacity: 1, padding: "10px 15px", marginBottom: "5px" }
   }
@@ -92,12 +92,12 @@ const Select: React.FC<SelectProps> = (props) => {
       error={props.error}
     >
       {props.label && <div className="AltairSelect-label">{props.label}</div>}
-      <div className="AltairSelect-selected" onClick={onClickSelect} tabIndex={props.disabled ? undefined : 0} onKeyDown={onKeyDownSelect}>
+      <motion.div whileTap={{ scale: 0.98 }} className="AltairSelect-selected" onClick={onClickSelect} tabIndex={props.disabled ? undefined : 0} onKeyDown={onKeyDownSelect}>
         <div className="AltairSelect-selected-label">
           {hasValue ? props.customSelected!(options.find((val) => val.value === selected)!!) : <p className="AltairSelect-placeholder">{props.placeholder}</p>}
         </div>
         <div className="AltairSelect-selected-icon"><ChevronUp /></div>
-      </div>
+      </motion.div>
       {!isFocus && props.helperText && <div className="AltairSelect-helpertext">{props.helperText}</div>}
       <AnimatePresence>
         {isFocus && (
@@ -115,6 +115,7 @@ const Select: React.FC<SelectProps> = (props) => {
               <AnimatePresence>
                 {filterOptions.map((option) => (
                   <Option
+                    whileTap={{ scale: 0.98 }}
                     variants={optionVariants}
                     initial="hidden"
                     animate="visible"

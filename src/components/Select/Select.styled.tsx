@@ -151,26 +151,30 @@ export const SelectStyled = styled.div<TMain>`
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    border-radius: 8px;
-    background: ${({ theme }) => theme.colors?.primary?.["50"]};
-    padding: 0 18px;
     gap: 8px;
+    position: relative;
     > svg {
       height: 20px;
       width: 20px;
       color: ${({ theme }) => theme.colors?.gray?.[200]};
+      position: absolute;
+      left: 15px;
+      margin: 0 auto;
       transition: .3s all ease;
     }
     .AltairSelect-search-input{
       border: none;
       width: 100%;
-      background: transparent;
+      padding-left: 45px;
+      border-radius: 8px;
+      background: ${({ theme }) => theme.colors?.primary?.["50"]};
       color: ${({ theme }) => theme.colors?.text?.[900]};
       font-weight: 400;
       font-size: 14px;
       height: 44px;
       caret-color: ${({ theme }) => theme.colors?.primary?.[500]};
       outline: none;
+      border: 1px solid transparent;
       ::placeholder { 
         color: ${({ theme }) => theme.colors?.text?.[300]};
         opacity: 1;
