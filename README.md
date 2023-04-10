@@ -1,6 +1,6 @@
 # Altair Components
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/github/all-contributors/Muhammad Luqmanul Hakim/altair-components?color=ee8449&style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/github/all-contributors/iamhkmid/altair-components?color=ee8449&style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Component collection based on altair design system.
