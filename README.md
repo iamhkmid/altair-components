@@ -10,7 +10,7 @@ Component collection based on altair design system.
 Use the package manager npm to install.
 
 ```bash
-https://altair-components.vercel.app/
+[all-contributors](https://altair-components.vercel.app/)
 ```
 
 ## Installation
