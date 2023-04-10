@@ -1,24 +1,32 @@
-# Sephora Components
+# Altair Components
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Component collection based on sephora design system.
+Component collection based on altair design system.
 
 ## Installation
 
 Use the package manager npm to install.
 
 ```bash
-npm i or yarn add
+npm i
+```
+or
+
+```bash
+yarn add
 ```
 
 ## Start Storybook
 
 ```bash
-npm run storybook or yarn storybook
+npm run storybook
 ```
-
+or
+```bash
+yarn storybook
+```
 ## Contributors ✨
 
 <!-- Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)): -->
